@@ -9,4 +9,9 @@ eureka:
     register-with-eureka: false
     service-url:
       defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  server:
+    #关闭自我保护，使不可用服务及时剔除
+    enable-self-preservation: false
+    #检测到不可用服务后2000ms后剔除
+    eviction-interval-timer-in-ms: 2000
 
