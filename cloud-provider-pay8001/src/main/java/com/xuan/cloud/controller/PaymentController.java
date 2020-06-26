@@ -1,14 +1,18 @@
 package com.xuan.cloud.controller;
 
 
+
 import com.xuan.cloud.entities.CommonResult;
 import com.xuan.cloud.entities.Payment;
 import com.xuan.cloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @RestController
 @Slf4j
@@ -18,6 +22,9 @@ public class PaymentController {
 
     @Value("${server.port}")
     private String port;
+
+    @Resource
+    private DiscoveryClient discoveryClient;
 
     @PostMapping(value = "/payment/create")
     public CommonResult create(@RequestBody Payment payment){
@@ -45,5 +52,25 @@ public class PaymentController {
         {
             return new CommonResult(444,"没有对应记录，查询失败,端口为"+port,null);
         }
+    }
+
+    //获取服务信息
+    @GetMapping(value = "/payment/discovery")
+    public Object discovery()
+    {
+        //获取应用名称
+        List<String> services = discoveryClient.getServices();
+        for (String service:services)
+        {
+            log.info("*****"+service);
+        }
+        //根据名称获取详细信息
+        List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
+        for(ServiceInstance serviceInstance:instances)
+        {
+            log.info("*****"+serviceInstance.getServiceId()+" "+serviceInstance.getHost()+" " +serviceInstance.getPort()+" "+serviceInstance.getUri());
+        }
+
+        return discoveryClient;
     }
 }
