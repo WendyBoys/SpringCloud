@@ -34,7 +34,9 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1dZN1alK8SGztmGM5cuxtbdbbsc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="foldersAlwaysOnTop" value="false" />
@@ -50,7 +52,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592627443696" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-consumerzk-order80/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -60,12 +62,16 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xuan.cloud.controller" />
+      <recent name="com.xuan.cloud.config" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\SpringCloud\cloud-consumerzk-order80\src\main\resources" />
       <recent name="F:\cloud_1\cloud-provider-pay8002\src\main\resources" />
       <recent name="F:\cloud_1\cloud-provider-pay8002\src\main\java" />
       <recent name="F:\cloud_1\cloud-eureka-server7003\src\main\resources" />
       <recent name="F:\cloud_1\cloud-eureka-server7002\src\main\resources" />
-      <recent name="F:\cloud_1\cloud-api-commons\src\main\java\com\xuan\cloud\entities" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -77,7 +83,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServer7001MainApplication">
+  <component name="RunManager" selected="Spring Boot.ConsumerzkMainApplication">
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -143,6 +149,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsumerzkMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-consumerzk-order80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xuan.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuan.cloud.ConsumerzkMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServer7001MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="EurekaServer" nameIsGenerated="true">
       <module name="cloud-eureka-server7001" />
       <extension name="coverage">
@@ -169,15 +188,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServer7003MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="EurekaServer" temporary="true" nameIsGenerated="true">
-      <module name="cloud-eureka-server7003" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xuan.cloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuan.cloud.EurekaServer7003MainApplication" />
+    <configuration name="ZookeeperMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-provider-pay8003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuan.cloud.ZookeeperMainApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,18 +225,19 @@
       <item itemvalue="Maven.cloud-api-commons [clean,install]" />
       <item itemvalue="Spring Boot.EurekaServer7001MainApplication" />
       <item itemvalue="Spring Boot.EurekaServer7002MainApplication" />
-      <item itemvalue="Spring Boot.EurekaServer7003MainApplication" />
       <item itemvalue="Spring Boot.pay8001MainApplication" />
       <item itemvalue="Spring Boot.pay8002MainApplication" />
       <item itemvalue="Spring Boot.ConsumerMainApplication" />
+      <item itemvalue="Spring Boot.ZookeeperMainApplication" />
+      <item itemvalue="Spring Boot.ConsumerzkMainApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.pay8001MainApplication" />
+        <item itemvalue="Spring Boot.ConsumerzkMainApplication" />
         <item itemvalue="Spring Boot.pay8002MainApplication" />
-        <item itemvalue="Spring Boot.ConsumerMainApplication" />
-        <item itemvalue="Spring Boot.EurekaServer7003MainApplication" />
+        <item itemvalue="Spring Boot.pay8001MainApplication" />
         <item itemvalue="Spring Boot.EurekaServer7002MainApplication" />
+        <item itemvalue="Spring Boot.ConsumerMainApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -251,6 +265,7 @@
       <workItem from="1593088069958" duration="5773000" />
       <workItem from="1593093885215" duration="318000" />
       <workItem from="1593142387211" duration="1505000" />
+      <workItem from="1593173641948" duration="5509000" />
     </task>
     <task id="LOCAL-00001" summary="SpringCloud">
       <created>1593146392916</created>
@@ -259,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593146392916</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SpringCloud">
+      <created>1593182067236</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593182067236</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,10 +308,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1592630258978" />
-    <state x="338" y="0" key="CommitChangelistDialog2" timestamp="1593146487756">
+    <state x="338" y="0" key="CommitChangelistDialog2" timestamp="1593182064833">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="338" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593146487756" />
+    <state x="338" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593182064833" />
     <state x="147" y="64" key="DiffContextDialog" timestamp="1593146374953">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -298,38 +320,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="110" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592749555386" />
-    <state width="1090" height="316" key="GridCell.Tab.0.bottom" timestamp="1593146502484">
+    <state width="1090" height="369" key="GridCell.Tab.0.bottom" timestamp="1593182051561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593146502484" />
-    <state width="1090" height="316" key="GridCell.Tab.0.center" timestamp="1593146502484">
+    <state width="1090" height="369" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593182051561" />
+    <state width="1090" height="369" key="GridCell.Tab.0.center" timestamp="1593182051561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593146502484" />
-    <state width="1090" height="316" key="GridCell.Tab.0.left" timestamp="1593146502484">
+    <state width="1090" height="369" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593182051561" />
+    <state width="1090" height="369" key="GridCell.Tab.0.left" timestamp="1593182051560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593146502484" />
-    <state width="1090" height="316" key="GridCell.Tab.0.right" timestamp="1593146502484">
+    <state width="1090" height="369" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593182051560" />
+    <state width="1090" height="369" key="GridCell.Tab.0.right" timestamp="1593182051561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593146502484" />
-    <state width="1090" height="316" key="GridCell.Tab.1.bottom" timestamp="1593146502484">
+    <state width="1090" height="369" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593182051561" />
+    <state width="1090" height="369" key="GridCell.Tab.1.bottom" timestamp="1593182051561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="316" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593146502484" />
-    <state width="1090" height="316" key="GridCell.Tab.1.center" timestamp="1593146502484">
+    <state width="1090" height="369" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593182051561" />
+    <state width="1090" height="369" key="GridCell.Tab.1.center" timestamp="1593182051561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="316" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593146502484" />
-    <state width="1090" height="316" key="GridCell.Tab.1.left" timestamp="1593146502484">
+    <state width="1090" height="369" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593182051561" />
+    <state width="1090" height="369" key="GridCell.Tab.1.left" timestamp="1593182051561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="316" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593146502484" />
-    <state width="1090" height="316" key="GridCell.Tab.1.right" timestamp="1593146502484">
+    <state width="1090" height="369" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593182051561" />
+    <state width="1090" height="369" key="GridCell.Tab.1.right" timestamp="1593182051561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="316" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593146502484" />
+    <state width="1090" height="369" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593182051561" />
     <state x="349" y="37" width="837" height="560" key="Registry" timestamp="1592747129107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -342,14 +364,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="71" y="49" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593090402206" />
-    <state x="361" y="131" key="Vcs.Push.Dialog.v2" timestamp="1593146475396">
+    <state x="361" y="131" key="Vcs.Push.Dialog.v2" timestamp="1593182088507">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="131" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593146475396" />
-    <state x="304" y="76" key="new project wizard" timestamp="1593091683628">
+    <state x="361" y="131" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593182088507" />
+    <state x="304" y="76" key="new project wizard" timestamp="1593181132436">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="304" y="76" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1593091683628" />
+    <state x="304" y="76" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1593181132436" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592750424277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
