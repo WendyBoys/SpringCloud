@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 public class ApplicationConfig {
 
     @Bean
-    @LoadBalanced //内部使用了Ribbon实现了客户端的负载均衡
+    //@LoadBalanced //内部使用了Ribbon实现了客户端的负载均衡
     public RestTemplate getRestTemplate()
     {
         return new RestTemplate();

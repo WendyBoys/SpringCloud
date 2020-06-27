@@ -19,7 +19,7 @@ public class PaymentController {
     @Value("${server.port}")
     private String port;
 
-    @PostMapping(value = "/payment/create")
+    @GetMapping(value = "/payment/create")
     public CommonResult create(@RequestBody Payment payment){
         int result = paymentService.create(payment);
         log.info("******插入结果"+result);
@@ -45,5 +45,11 @@ public class PaymentController {
         {
             return new CommonResult(444,"没有对应记录，查询失败,端口为"+port,null);
         }
+    }
+
+    @GetMapping(value = "/payment/getPort")
+    public String getPort()
+    {
+        return port;
     }
 }
