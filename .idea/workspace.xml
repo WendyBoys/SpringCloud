@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1edb062-689f-40ca-9965-f9e5808ce144" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/xuan/Ribbon/MyRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/xuan/cloud/loadBalancer/LoadBalancer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/xuan/cloud/loadBalancer/LunXun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/xuan/cloud/ConsumerMainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/xuan/cloud/ConsumerMainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/xuan/cloud/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/xuan/cloud/config/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/xuan/cloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/xuan/cloud/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/xuan/cloud/ConsumerMainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/xuan/cloud/ConsumerMainApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/xuan/cloud/config/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/xuan/cloud/config/ApplicationConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/xuan/cloud/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/xuan/cloud/controller/OrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-openFeign-order80/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-openFeign-order80/src/main/java/com/xuan/cloud/OpenFeignMainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-openFeign-order80/src/main/java/com/xuan/cloud/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-openFeign-order80/src/main/java/com/xuan/cloud/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-openFeign-order80/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-pay8001/src/main/java/com/xuan/cloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-pay8001/src/main/java/com/xuan/cloud/controller/PaymentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-pay8001/target/classes/com/xuan/cloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-pay8001/target/classes/com/xuan/cloud/controller/PaymentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-pay8002/src/main/java/com/xuan/cloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-pay8002/src/main/java/com/xuan/cloud/controller/PaymentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-pay8002/target/classes/com/xuan/cloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-pay8002/target/classes/com/xuan/cloud/controller/PaymentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +49,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
     <option name="foldersAlwaysOnTop" value="false" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
@@ -65,7 +63,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592627443696" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-consumerzk-order80/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-consumer-openFeign-order80/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -76,15 +74,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xuan.cloud.service" />
       <recent name="com.xuan.cloud.controller" />
       <recent name="com.xuan.cloud.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\SpringCloud\cloud-consumer-openFeign-order80\src\main\resources" />
       <recent name="F:\SpringCloud\cloud-consumerzk-order80\src\main\resources" />
       <recent name="F:\cloud_1\cloud-provider-pay8002\src\main\resources" />
       <recent name="F:\cloud_1\cloud-provider-pay8002\src\main\java" />
       <recent name="F:\cloud_1\cloud-eureka-server7003\src\main\resources" />
-      <recent name="F:\cloud_1\cloud-eureka-server7002\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -96,7 +95,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConsumerMainApplication">
+  <component name="RunManager" selected="Spring Boot.OpenFeignMainApplication">
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -149,15 +148,9 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="ConsumerMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-consumer-order80" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xuan.cloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuan.cloud.ConsumerMainApplication" />
+    <configuration name="ConsumerzkMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-consumerzk-order80" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuan.cloud.ConsumerzkMainApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,6 +190,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuan.cloud.EurekaServer7003MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenFeignMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-consumer-openFeign80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xuan.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuan.cloud.OpenFeignMainApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -242,11 +248,12 @@
       <item itemvalue="Spring Boot.pay8001MainApplication" />
       <item itemvalue="Spring Boot.pay8002MainApplication" />
       <item itemvalue="Spring Boot.ZookeeperMainApplication" />
-      <item itemvalue="Spring Boot.ConsumerMainApplication" />
+      <item itemvalue="Spring Boot.ConsumerzkMainApplication" />
+      <item itemvalue="Spring Boot.OpenFeignMainApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ConsumerMainApplication" />
+        <item itemvalue="Spring Boot.OpenFeignMainApplication" />
         <item itemvalue="Spring Boot.pay8002MainApplication" />
         <item itemvalue="Spring Boot.pay8001MainApplication" />
         <item itemvalue="Spring Boot.EurekaServer7003MainApplication" />
@@ -281,6 +288,7 @@
       <workItem from="1593173641948" duration="5540000" />
       <workItem from="1593241229740" duration="4149000" />
       <workItem from="1593262307142" duration="1727000" />
+      <workItem from="1593347712951" duration="3135000" />
     </task>
     <task id="LOCAL-00001" summary="SpringCloud">
       <created>1593146392916</created>
@@ -335,38 +343,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="110" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592749555386" />
-    <state width="1090" height="208" key="GridCell.Tab.0.bottom" timestamp="1593264035732">
+    <state width="1090" height="481" key="GridCell.Tab.0.bottom" timestamp="1593350869985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593264035732" />
-    <state width="1090" height="208" key="GridCell.Tab.0.center" timestamp="1593264035732">
+    <state width="1090" height="481" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593350869985" />
+    <state width="1090" height="481" key="GridCell.Tab.0.center" timestamp="1593350869985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593264035732" />
-    <state width="1090" height="208" key="GridCell.Tab.0.left" timestamp="1593264035732">
+    <state width="1090" height="481" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593350869985" />
+    <state width="1090" height="481" key="GridCell.Tab.0.left" timestamp="1593350869985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593264035732" />
-    <state width="1090" height="208" key="GridCell.Tab.0.right" timestamp="1593264035732">
+    <state width="1090" height="481" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593350869985" />
+    <state width="1090" height="481" key="GridCell.Tab.0.right" timestamp="1593350869985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593264035732" />
-    <state width="1090" height="208" key="GridCell.Tab.1.bottom" timestamp="1593264035732">
+    <state width="1090" height="481" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593350869985" />
+    <state width="1090" height="481" key="GridCell.Tab.1.bottom" timestamp="1593350869986">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="208" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593264035732" />
-    <state width="1090" height="208" key="GridCell.Tab.1.center" timestamp="1593264035732">
+    <state width="1090" height="481" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593350869986" />
+    <state width="1090" height="481" key="GridCell.Tab.1.center" timestamp="1593350869985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="208" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593264035732" />
-    <state width="1090" height="208" key="GridCell.Tab.1.left" timestamp="1593264035732">
+    <state width="1090" height="481" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593350869985" />
+    <state width="1090" height="481" key="GridCell.Tab.1.left" timestamp="1593350869985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="208" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593264035732" />
-    <state width="1090" height="208" key="GridCell.Tab.1.right" timestamp="1593264035732">
+    <state width="1090" height="481" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593350869985" />
+    <state width="1090" height="481" key="GridCell.Tab.1.right" timestamp="1593350869985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1090" height="208" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593264035732" />
+    <state width="1090" height="481" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593350869985" />
     <state x="349" y="37" width="837" height="560" key="Registry" timestamp="1592747129107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -383,10 +391,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="131" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593182088507" />
-    <state x="304" y="76" key="new project wizard" timestamp="1593181132436">
+    <state x="304" y="76" key="new project wizard" timestamp="1593347788016">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="304" y="76" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1593181132436" />
+    <state x="304" y="76" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1593347788016" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592750424277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -16,6 +16,7 @@
         <module name="cloud-provider-pay8003" />
         <module name="cloud-provider-pay8002" />
         <module name="cloud-provider-pay8001" />
+        <module name="cloud-consumer-openFeign80" />
       </profile>
     </annotationProcessing>
   </component>

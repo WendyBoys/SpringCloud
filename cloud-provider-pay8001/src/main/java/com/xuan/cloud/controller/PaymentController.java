@@ -5,6 +5,7 @@ package com.xuan.cloud.controller;
 import com.xuan.cloud.entities.CommonResult;
 import com.xuan.cloud.entities.Payment;
 import com.xuan.cloud.service.PaymentService;
+import io.micrometer.core.instrument.util.TimeUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @Slf4j
@@ -77,6 +79,17 @@ public class PaymentController {
     @GetMapping(value = "/payment/getPort")
     public String getPort()
     {
+        return port;
+    }
+
+    @GetMapping(value = "/payment/getTimeoutPort")
+    public String getTimeoutPort()
+    {
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return port;
     }
 }

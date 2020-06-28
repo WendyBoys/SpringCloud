@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @Slf4j
@@ -50,6 +51,18 @@ public class PaymentController {
     @GetMapping(value = "/payment/getPort")
     public String getPort()
     {
+        return port;
+    }
+
+    //模拟一个延时请求 需要在80客户端 OpenFeign的yml配置超时超过3s 才行 默认是1s 会访问失败
+    @GetMapping(value = "/payment/getTimeoutPort")
+    public String getTimeoutPort()
+    {
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return port;
     }
 }
