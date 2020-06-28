@@ -12,5 +12,11 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
 
 ribbon:
+  #建立连接时间 默认是1000ms 不修改 当延时超过1000ms就报超时 此处改为5000ms
   ReadTimeout: 5000
+  #指的是建立连接后从服务器读取到可用资源所用的时间
   ConnectTimeout: 5000
+
+logging:
+  level:
+    com.xuan.cloud.service.PaymentService: debug
