@@ -18,6 +18,8 @@
     <module>cloud-provider-pay8003</module>
       <module>cloud-consumerzk-order80</module>
       <module>cloud-consumer-openFeign-order80</module>
+      <module>cloud-provider-hystrix-payment8001</module>
+      <module>cloud-comsumer-hystrix-order80</module>
   </modules>
   <packaging>pom</packaging>
   <name>Maven</name>

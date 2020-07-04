@@ -5,19 +5,19 @@ spring:
   application:
     name: cloud-order-service
 
-eureka:
-  client:
-    register-with-eureka: false
-    service-url:
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
-
 ribbon:
   #建立连接时间 默认是1000ms 不修改 当延时超过1000ms就报超时 此处改为5000ms
   ReadTimeout: 5000
   #指的是建立连接后从服务器读取到可用资源所用的时间
   ConnectTimeout: 5000
 
-logging:
-  level:
-    #指定要监听日志的接口
-    com.xuan.cloud.service.PaymentService: debug
+#客户端开启hystrix 要配置这个 服务端没feign 开个鸡毛
+feign:
+  hystrix:
+    enabled: true
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
