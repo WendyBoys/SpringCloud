@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.concurrent.TimeUnit;
 
 @Component
-@FeignClient("cloud-payment-hystrix-service") //指定服务名
+@FeignClient(value = "cloud-payment-hystrix-service",fallback = PaymentFallBackService.class) //指定服务名
 public interface PaymentService {
 
     @GetMapping(value = "/pay/hystrix/ok")

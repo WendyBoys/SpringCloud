@@ -1,5 +1,6 @@
 package com.xuan.cloud.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.xuan.cloud.entities.CommonResult;
@@ -15,6 +16,8 @@ import java.util.concurrent.TimeUnit;
 
 @RestController
 @Slf4j
+//当前controller配置默认的 方法注解只能写 @HystrixCommand 不可带参数 这里可以加参数
+@DefaultProperties(defaultFallback = "globalHandler")
 public class OrderController {
 
     @Resource
@@ -28,10 +31,12 @@ public class OrderController {
     }
 
     @GetMapping(value = "/consumer/pay/hystrix/timeout")
-    @HystrixCommand(fallbackMethod = "timeoutHandler",commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "2500")})
+    /*@HystrixCommand(fallbackMethod = "timeoutHandler",commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "3500")})*/
+    @HystrixCommand
     public String timeout(int id) throws InterruptedException {
         log.info("timeout");
+       // int a=1/0;
         return  paymentService.timeout(id);
     }
 
@@ -39,4 +44,11 @@ public class OrderController {
     {
         return Thread.currentThread().getName()+"客户端繁忙，请稍后再试!";
     }
+
+    public String globalHandler()
+    {
+        return Thread.currentThread().getName()+"全局服务器繁忙，请稍后再试!";
+    }
 }
+
+
